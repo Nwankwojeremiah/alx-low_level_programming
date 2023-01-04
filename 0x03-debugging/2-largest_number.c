@@ -14,7 +14,7 @@ int largest;
 
 if (a > b && a > c)
 {
-	largest - a;
+	largest = a;
 }
 else if (b > c && b > a)
 {
@@ -22,7 +22,7 @@ else if (b > c && b > a)
 }
 else if (c > b)
 {
-	largest - c;
+	largest = c;
 }
 else
 {
@@ -30,3 +30,4 @@ else
 }
 
 return (largest);
+}
