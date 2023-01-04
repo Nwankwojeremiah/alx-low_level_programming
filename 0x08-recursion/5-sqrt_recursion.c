@@ -1,23 +1,23 @@
 #include "main.h"
 /**
-  *helperfunction - checks if sqrt of number exists
-  *@nus: number.
-  *@psqrt: possible sqrt of number.
+  *helperFunction - checks if sqrt of number exists
+  *@num: number.
+  *@pSqrt: possible sqrt of number.
   *
   *Return: sqrt of number ot -1 for error.
   */
-int helperfunction(int num, int psqrt)
+int helperFunction(int num, int pSqrt)
 {
-	if ((psqrt * psqrt) == num)
+	if ((pSqrt * pSqrt) == num)
 	{
-		return (psqrt);
+		return (pSqrt);
 	}
 	else
 	{
-		if ((psqrt * psqrt) > num )
+		if ((pSqrt * pSqrt) > num )
 			return (-1);
 		else
-			return (helperfunction(num, psqrt + 1));
+			return (helperFunction(num, pSqrt + 1));
 	}
 }
 
@@ -33,5 +33,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return (helperfuntion(n, 0));
+		return (helperFuntion(n, 0));
 }
